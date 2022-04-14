@@ -8,22 +8,21 @@
 
 .movie-title {
 	font-size: 2em;
-    justify-content: center;
-    display: flex;
-    margin: 20px;
-    font-weight: bold;
-    padding: 20px;
-    text-align: center;
+  justify-content: center;
+  display: flex;
+  margin: 20px;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
 }
 
 .movie-image {
 	justify-content: center;
-    display: flex;
-    margin-left: 30%;
-    text-align: center;
-    /* padding: 20px; */
-    height: 300px;
-    box-shadow: 5px 20px 50px #000;
+  display: flex;
+  margin-left: 30%;
+  text-align: center;
+  height: 300px;
+  box-shadow: 5px 20px 50px #000;
 }
 
 .movie-description  {
@@ -33,8 +32,8 @@
 	padding-top: 30px;
 	font-size: 1em;
 	line-height: 1.5;
-	 justify-content: center;
-    display: flex;
+	justify-content: center;
+  display: flex;
 }
 
 .movie-genre {
