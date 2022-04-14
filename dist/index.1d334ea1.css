@@ -1,0 +1,51 @@
+
+
+.movie-view {
+  width: 550px;
+  height: 800px;
+  overflow: hidden;
+  background-color: black;
+  color: white;
+}
+
+.movie-title {
+  font-size: 2em;
+  justify-content: center;
+  display: flex;
+  margin: 20px;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+}
+
+.movie-image {
+  justify-content: center;
+  display: flex;
+  margin-left: 30%;
+  text-align: center;
+  /* padding: 20px; */
+  height: 300px;
+  box-shadow: 5px 20px 50px #000;
+}
+
+.movie-description {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  font-size: 1em;
+  line-height: 1.5;
+  justify-content: center;
+  display: flex;
+}
+
+.movie-genre {
+  font-weight: bold;
+  padding-top: 0px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+.my-flix {
+  color: steelblue;
+}
+/*# sourceMappingURL=index.1d334ea1.css.map */
