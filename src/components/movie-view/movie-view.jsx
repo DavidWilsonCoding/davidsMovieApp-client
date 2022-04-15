@@ -58,8 +58,6 @@ export class MovieView extends React.Component {
 
                                 </Row>
                                 <Row className="back-row"><Col ><Button onClick={() => { onBackClick(null); }} >Back</Button></Col></Row>
-
-
                             </Col>
                         </Row>
 
