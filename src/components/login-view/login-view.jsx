@@ -15,7 +15,6 @@ export function LoginView(props) {
 
 
     //Initialize useState Hooks 
-    //  const [Birthdate, setBirthdate] = useState('');
     const [UsernameErr, setUsernameErr] = useState('');
     const [PasswordErr, setPasswordErr] = useState('');
     const [EmailErr, setEmailErr] = useState('');

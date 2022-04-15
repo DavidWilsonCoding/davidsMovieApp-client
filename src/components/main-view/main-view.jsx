@@ -37,16 +37,6 @@ class MainView extends React.Component {
             this.getMovies(accessToken);
         }
 
-
-        //axios.get('https://lynnflix.herokuapp.com/movies')
-        //     .then(Response => {
-        //         this.setState({
-        //             movies: Response.data
-        //         });
-        //     })
-        //      .catch(error => {
-        //          console.log(error);
-        //       });
     }
 
     /*When a movie is clicked, this function is invoked and updates the state of the `selectedMovie` property to that movie*/

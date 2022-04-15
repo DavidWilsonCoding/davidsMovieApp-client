@@ -25105,15 +25105,6 @@ class MainView extends _reactDefault.default.Component {
             });
             this.getMovies(accessToken);
         }
-    //axios.get('https://lynnflix.herokuapp.com/movies')
-    //     .then(Response => {
-    //         this.setState({
-    //             movies: Response.data
-    //         });
-    //     })
-    //      .catch(error => {
-    //          console.log(error);
-    //       });
     }
     /*When a movie is clicked, this function is invoked and updates the state of the `selectedMovie` property to that movie*/ setSelectedMovie(newSelectedMovie) {
         this.setState({
@@ -25158,7 +25149,7 @@ class MainView extends _reactDefault.default.Component {
             ,
             __source: {
                 fileName: "src/components/main-view/main-view.jsx",
-                lineNumber: 101
+                lineNumber: 91
             },
             __self: this
         }));
@@ -25167,7 +25158,7 @@ class MainView extends _reactDefault.default.Component {
             className: "main-view",
             __source: {
                 fileName: "src/components/main-view/main-view.jsx",
-                lineNumber: 104
+                lineNumber: 94
             },
             __self: this
         }));
@@ -25176,7 +25167,7 @@ class MainView extends _reactDefault.default.Component {
             className: "main-view-row justify-content-md-center",
             __source: {
                 fileName: "src/components/main-view/main-view.jsx",
-                lineNumber: 110
+                lineNumber: 100
             },
             __self: this,
             children: [
@@ -25188,7 +25179,7 @@ class MainView extends _reactDefault.default.Component {
                     className: "fixed-top navbar-main",
                     __source: {
                         fileName: "src/components/main-view/main-view.jsx",
-                        lineNumber: 111
+                        lineNumber: 101
                     },
                     __self: this,
                     children: [
@@ -25197,7 +25188,7 @@ class MainView extends _reactDefault.default.Component {
                             className: "navbar-logo",
                             __source: {
                                 fileName: "src/components/main-view/main-view.jsx",
-                                lineNumber: 112
+                                lineNumber: 102
                             },
                             __self: this,
                             children: "David's Movie App "
@@ -25206,7 +25197,7 @@ class MainView extends _reactDefault.default.Component {
                             "aria-controls": "basic-navbar-nav",
                             __source: {
                                 fileName: "src/components/main-view/main-view.jsx",
-                                lineNumber: 113
+                                lineNumber: 103
                             },
                             __self: this
                         }),
@@ -25215,13 +25206,13 @@ class MainView extends _reactDefault.default.Component {
                             id: "basic-navbar-nav",
                             __source: {
                                 fileName: "src/components/main-view/main-view.jsx",
-                                lineNumber: 114
+                                lineNumber: 104
                             },
                             __self: this,
                             children: /*#__PURE__*/ _jsxRuntime.jsxs(_navDefault.default, {
                                 __source: {
                                     fileName: "src/components/main-view/main-view.jsx",
-                                    lineNumber: 115
+                                    lineNumber: 105
                                 },
                                 __self: this,
                                 children: [
@@ -25230,7 +25221,7 @@ class MainView extends _reactDefault.default.Component {
                                         className: "navbar-link",
                                         __source: {
                                             fileName: "src/components/main-view/main-view.jsx",
-                                            lineNumber: 116
+                                            lineNumber: 106
                                         },
                                         __self: this,
                                         children: "Favourites"
@@ -25238,7 +25229,7 @@ class MainView extends _reactDefault.default.Component {
                                     /*#__PURE__*/ _jsxRuntime.jsx(_navDefault.default.Link, {
                                         __source: {
                                             fileName: "src/components/main-view/main-view.jsx",
-                                            lineNumber: 117
+                                            lineNumber: 107
                                         },
                                         __self: this,
                                         children: "Profile"
@@ -25249,7 +25240,7 @@ class MainView extends _reactDefault.default.Component {
                                         },
                                         __source: {
                                             fileName: "src/components/main-view/main-view.jsx",
-                                            lineNumber: 118
+                                            lineNumber: 108
                                         },
                                         __self: this,
                                         children: "Logout"
@@ -25263,7 +25254,7 @@ class MainView extends _reactDefault.default.Component {
                     md: 8,
                     __source: {
                         fileName: "src/components/main-view/main-view.jsx",
-                        lineNumber: 127
+                        lineNumber: 117
                     },
                     __self: this,
                     children: /*#__PURE__*/ _jsxRuntime.jsx(_movieView.MovieView, {
@@ -25273,7 +25264,7 @@ class MainView extends _reactDefault.default.Component {
                         },
                         __source: {
                             fileName: "src/components/main-view/main-view.jsx",
-                            lineNumber: 128
+                            lineNumber: 118
                         },
                         __self: this
                     })
@@ -25282,7 +25273,7 @@ class MainView extends _reactDefault.default.Component {
                         xs: 2,
                         __source: {
                             fileName: "src/components/main-view/main-view.jsx",
-                            lineNumber: 134
+                            lineNumber: 124
                         },
                         __self: this,
                         children: /*#__PURE__*/ _jsxRuntime.jsx(_movieCard.MovieCard, {
@@ -25292,7 +25283,7 @@ class MainView extends _reactDefault.default.Component {
                             },
                             __source: {
                                 fileName: "src/components/main-view/main-view.jsx",
-                                lineNumber: 135
+                                lineNumber: 125
                             },
                             __self: this
                         })
@@ -26907,7 +26898,6 @@ function LoginView(props) {
     const [email, setEmail] = _react.useState('');
     //const [birthday, setBirthday] = useState('')
     //Initialize useState Hooks 
-    //  const [Birthdate, setBirthdate] = useState('');
     const [UsernameErr, setUsernameErr] = _react.useState('');
     const [PasswordErr, setPasswordErr] = _react.useState('');
     const [EmailErr, setEmailErr] = _react.useState('');
@@ -26964,7 +26954,7 @@ function LoginView(props) {
     return(/*#__PURE__*/ _jsxRuntime.jsx(_rowDefault.default, {
         __source: {
             fileName: "src/components/login-view/login-view.jsx",
-            lineNumber: 93
+            lineNumber: 92
         },
         __self: this,
         children: /*#__PURE__*/ _jsxRuntime.jsx(_colDefault.default, {
@@ -26972,14 +26962,14 @@ function LoginView(props) {
             className: "d-flex justify-content-center",
             __source: {
                 fileName: "src/components/login-view/login-view.jsx",
-                lineNumber: 94
+                lineNumber: 93
             },
             __self: this,
             children: /*#__PURE__*/ _jsxRuntime.jsxs("div", {
                 className: "main",
                 __source: {
                     fileName: "src/components/login-view/login-view.jsx",
-                    lineNumber: 95
+                    lineNumber: 94
                 },
                 __self: this,
                 children: [
@@ -26989,7 +26979,7 @@ function LoginView(props) {
                         "aria-hidden": "true",
                         __source: {
                             fileName: "src/components/login-view/login-view.jsx",
-                            lineNumber: 96
+                            lineNumber: 95
                         },
                         __self: this
                     }),
@@ -26997,13 +26987,13 @@ function LoginView(props) {
                         className: "login",
                         __source: {
                             fileName: "src/components/login-view/login-view.jsx",
-                            lineNumber: 97
+                            lineNumber: 96
                         },
                         __self: this,
                         children: /*#__PURE__*/ _jsxRuntime.jsxs(_formDefault.default, {
                             __source: {
                                 fileName: "src/components/login-view/login-view.jsx",
-                                lineNumber: 98
+                                lineNumber: 97
                             },
                             __self: this,
                             children: [
@@ -27012,7 +27002,7 @@ function LoginView(props) {
                                     "aria-hidden": "true",
                                     __source: {
                                         fileName: "src/components/login-view/login-view.jsx",
-                                        lineNumber: 99
+                                        lineNumber: 98
                                     },
                                     __self: this,
                                     children: "MyFlix"
@@ -27020,7 +27010,7 @@ function LoginView(props) {
                                 /*#__PURE__*/ _jsxRuntime.jsxs(_formDefault.default.Group, {
                                     __source: {
                                         fileName: "src/components/login-view/login-view.jsx",
-                                        lineNumber: 101
+                                        lineNumber: 100
                                     },
                                     __self: this,
                                     children: [
@@ -27035,14 +27025,14 @@ function LoginView(props) {
                                             required: "",
                                             __source: {
                                                 fileName: "src/components/login-view/login-view.jsx",
-                                                lineNumber: 102
+                                                lineNumber: 101
                                             },
                                             __self: this
                                         }),
                                         UsernameErr && /*#__PURE__*/ _jsxRuntime.jsx("p", {
                                             __source: {
                                                 fileName: "src/components/login-view/login-view.jsx",
-                                                lineNumber: 109
+                                                lineNumber: 108
                                             },
                                             __self: this,
                                             children: UsernameErr
@@ -27052,7 +27042,7 @@ function LoginView(props) {
                                 /*#__PURE__*/ _jsxRuntime.jsx(_formDefault.default.Group, {
                                     __source: {
                                         fileName: "src/components/login-view/login-view.jsx",
-                                        lineNumber: 112
+                                        lineNumber: 111
                                     },
                                     __self: this,
                                     children: /*#__PURE__*/ _jsxRuntime.jsx(_formDefault.default.Control, {
@@ -27071,7 +27061,7 @@ function LoginView(props) {
                                         }),
                                         __source: {
                                             fileName: "src/components/login-view/login-view.jsx",
-                                            lineNumber: 113
+                                            lineNumber: 112
                                         },
                                         __self: this
                                     })
@@ -27082,7 +27072,7 @@ function LoginView(props) {
                                     onClick: handleSubmit,
                                     __source: {
                                         fileName: "src/components/login-view/login-view.jsx",
-                                        lineNumber: 127
+                                        lineNumber: 126
                                     },
                                     __self: this,
                                     children: "Login"
@@ -27094,14 +27084,14 @@ function LoginView(props) {
                         className: "signup",
                         __source: {
                             fileName: "src/components/login-view/login-view.jsx",
-                            lineNumber: 130
+                            lineNumber: 129
                         },
                         __self: this,
                         children: /*#__PURE__*/ _jsxRuntime.jsxs(_formDefault.default, {
                             className: "signup-form",
                             __source: {
                                 fileName: "src/components/login-view/login-view.jsx",
-                                lineNumber: 131
+                                lineNumber: 130
                             },
                             __self: this,
                             children: [
@@ -27111,7 +27101,7 @@ function LoginView(props) {
                                     className: "signup-label",
                                     __source: {
                                         fileName: "src/components/login-view/login-view.jsx",
-                                        lineNumber: 132
+                                        lineNumber: 131
                                     },
                                     __self: this,
                                     children: "Sign up"
@@ -27120,7 +27110,7 @@ function LoginView(props) {
                                     controlId: "formSigninUsername",
                                     __source: {
                                         fileName: "src/components/login-view/login-view.jsx",
-                                        lineNumber: 133
+                                        lineNumber: 132
                                     },
                                     __self: this,
                                     children: /*#__PURE__*/ _jsxRuntime.jsx(_formDefault.default.Control, {
@@ -27140,7 +27130,7 @@ function LoginView(props) {
                                         required: "",
                                         __source: {
                                             fileName: "src/components/login-view/login-view.jsx",
-                                            lineNumber: 134
+                                            lineNumber: 133
                                         },
                                         __self: this
                                     })
@@ -27148,7 +27138,7 @@ function LoginView(props) {
                                 /*#__PURE__*/ _jsxRuntime.jsx(_formDefault.default.Group, {
                                     __source: {
                                         fileName: "src/components/login-view/login-view.jsx",
-                                        lineNumber: 145
+                                        lineNumber: 144
                                     },
                                     __self: this,
                                     children: /*#__PURE__*/ _jsxRuntime.jsx(_formDefault.default.Control, {
@@ -27163,7 +27153,7 @@ function LoginView(props) {
                                         required: "",
                                         __source: {
                                             fileName: "src/components/login-view/login-view.jsx",
-                                            lineNumber: 146
+                                            lineNumber: 145
                                         },
                                         __self: this
                                     })
@@ -27172,7 +27162,7 @@ function LoginView(props) {
                                     controlId: "formSigninPassword",
                                     __source: {
                                         fileName: "src/components/login-view/login-view.jsx",
-                                        lineNumber: 157
+                                        lineNumber: 156
                                     },
                                     __self: this,
                                     children: /*#__PURE__*/ _jsxRuntime.jsx(_formDefault.default.Control, {
@@ -27193,7 +27183,7 @@ function LoginView(props) {
                                         required: "",
                                         __source: {
                                             fileName: "src/components/login-view/login-view.jsx",
-                                            lineNumber: 158
+                                            lineNumber: 157
                                         },
                                         __self: this
                                     })
@@ -27202,7 +27192,7 @@ function LoginView(props) {
                                     controlId: "formDateofBirth",
                                     __source: {
                                         fileName: "src/components/login-view/login-view.jsx",
-                                        lineNumber: 169
+                                        lineNumber: 168
                                     },
                                     __self: this,
                                     children: /*#__PURE__*/ _jsxRuntime.jsx(_formDefault.default.Control, {
@@ -27214,7 +27204,7 @@ function LoginView(props) {
                                         ,
                                         __source: {
                                             fileName: "src/components/login-view/login-view.jsx",
-                                            lineNumber: 170
+                                            lineNumber: 169
                                         },
                                         __self: this
                                     })
@@ -27225,7 +27215,7 @@ function LoginView(props) {
                                     type: "submit",
                                     __source: {
                                         fileName: "src/components/login-view/login-view.jsx",
-                                        lineNumber: 179
+                                        lineNumber: 178
                                     },
                                     __self: this,
                                     children: "Sign up"
@@ -29110,10 +29100,6 @@ class MovieCard extends _reactDefault.default.Component {
         }));
     }
 }
-//<Card.Body>
-//           </Card.Body >
-//<Card.Text>{movie.Description}</Card.Text>
-//<Button onClick={() => onMovieClick(movie)} variant="link">Open</Button>
 MovieCard.propTypes = {
     movie: _propTypesDefault.default.shape({
         Title: _propTypesDefault.default.string.isRequired,
