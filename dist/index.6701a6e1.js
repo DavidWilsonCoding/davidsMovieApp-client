@@ -25269,8 +25269,9 @@ class MainView extends _reactDefault.default.Component {
                         __self: this
                     })
                 }) : movies.map((movie)=>/*#__PURE__*/ _jsxRuntime.jsx(_colDefault.default, {
+                        xs: 12,
+                        sm: 6,
                         md: 4,
-                        xs: 2,
                         __source: {
                             fileName: "src/components/main-view/main-view.jsx",
                             lineNumber: 124
@@ -29117,7 +29118,7 @@ MovieCard.propTypes = {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"8xIwr","react":"6TuXu","prop-types":"1tgq3","@parcel/transformer-js/src/esmodule-helpers.js":"jfrwJ","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"gGwCp","react-bootstrap/Card":"MoOk8","./movie-card.scss":"cF5gT"}],"MoOk8":[function(require,module,exports) {
+},{"react/jsx-runtime":"8xIwr","react":"6TuXu","prop-types":"1tgq3","@parcel/transformer-js/src/esmodule-helpers.js":"jfrwJ","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"gGwCp","./movie-card.scss":"cF5gT","react-bootstrap/Card":"MoOk8"}],"cF5gT":[function() {},{}],"MoOk8":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _classnames = require("classnames");
@@ -29252,7 +29253,7 @@ const context = /*#__PURE__*/ _react.createContext(null);
 context.displayName = 'CardHeaderContext';
 exports.default = context;
 
-},{"react":"6TuXu","@parcel/transformer-js/src/esmodule-helpers.js":"jfrwJ"}],"cF5gT":[function() {},{}],"ikZdr":[function(require,module,exports) {
+},{"react":"6TuXu","@parcel/transformer-js/src/esmodule-helpers.js":"jfrwJ"}],"ikZdr":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$3741 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
