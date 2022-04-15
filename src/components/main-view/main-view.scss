@@ -1,0 +1,23 @@
+:root {
+  --main-bg-color: #282828;
+  --card-bg-color: #404040;
+  --btn-color: #C4043F;
+}
+
+.navbar-main {
+  background: rgba(0, 0, 0, 1);
+  height: 80px;
+}
+
+.navbar-logo{
+    font-weight: bold;
+    font-size: 2.5rem !important;
+}
+
+.navbar-menu{
+    justify-content: end !important;
+}
+
+.main-view-row {
+  background-color: var(--main-bg-color);
+}

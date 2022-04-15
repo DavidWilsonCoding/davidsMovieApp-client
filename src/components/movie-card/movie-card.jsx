@@ -1,42 +1,33 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Card from 'react-bootstrap/Card';
 
-// Movie view stylesheet
+// moviecard stylesheet
 import './movie-card.scss';
-
-function changeBackground(e) {
-    e.target.style.background = '#573b8a';
-    e.target.style.color = "white";
-}
-
-
-function resetBackground(e) {
-    e.target.style.background = "#e0dede";
-    e.target.style.color = "black";
-
-}
-
 
 export class MovieCard extends React.Component {
     render() {
-        const { movie, index, onMovieClick } = this.props;
-        if (index == 0) {
-            return (
-                <div>
-                    <div className="movie-card-titles">My Movies</div>
-                    <div onMouseOver={changeBackground} onMouseOut={resetBackground} onClick={() => onMovieClick(movie)} className="movie-card">{movie.Title}</div>
-                </div>
-            );
-        } else {
+        const { movie, onMovieClick } = this.props;
+        return (
 
-            return (
-                <div>
-                    <div onMouseOver={changeBackground} onMouseOut={resetBackground} onClick={() => onMovieClick(movie)} className="movie-card">{movie.Title}</div>
-                </div>);
-        }
+            <Card className="moviecard">
+                <Card.Title >{movie.Title}</Card.Title>
+                <Card.Img variant="top" src={movie.ImagePath} crossOrigin="anonymous" onClick={() => onMovieClick(movie)} />
+
+            </Card>
+
+        );
+
     }
+
 }
 
+//<Card.Body>
+
+
+//           </Card.Body >
+//<Card.Text>{movie.Description}</Card.Text>
+//<Button onClick={() => onMovieClick(movie)} variant="link">Open</Button>
 MovieCard.propTypes = {
     movie: PropTypes.shape({
         Title: PropTypes.string.isRequired,
@@ -46,6 +37,5 @@ MovieCard.propTypes = {
             Name: PropTypes.string.isRequired
         })
     }).isRequired,
-    index: PropTypes.number.isRequired,
     onMovieClick: PropTypes.func.isRequired
 };

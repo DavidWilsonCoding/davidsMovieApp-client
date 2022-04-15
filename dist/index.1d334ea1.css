@@ -1,50 +1,224 @@
+:root {
+  --main-bg-color: #282828;
+  --card-bg-color: #404040;
+  --btn-color: #C4043F;
+}
 
+body {
+  margin: 0;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--main-bg-color);
+}
 
-.movie-view {
-  width: 550px;
-  height: 800px;
+.main {
+  width: 350px;
+  height: 500px;
   overflow: hidden;
-  background-color: black;
+  background-color: var(--main-bg-color);
+  border-radius: 10px;
+  box-shadow: 5px 20px 50px #000;
+  margin-top: 10%;
+}
+
+#chk {
+  display: none;
+}
+
+.login {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+label {
+  color: white;
+  font-size: 2.3em;
+  justify-content: center;
+  padding-top: 50px;
+  margin-left: 120px;
+  padding-bottom: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.inputbox {
+  width: 60% !important;
+  background: #e0dede !important;
+  margin: 5px auto;
+  font-size: 0.85rem !important;
+}
+
+.signup-label {
+  margin-left: 110px;
+}
+
+.btn {
+  margin-left: 20% !important;
+  border: none !important;
+  background: var(--btn-color) !important;
+  font-size: 1em !important;
+  font-weight: bold !important;
+  transition: 0.2s ease-in !important;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.signup {
+  height: 460px;
+  background: #eee;
+  transform: translateY(-180px);
+  transition: 0.8s ease-in-out;
+  margin-block-start: 100px;
+}
+
+.signup label {
+  color: var(--btn-color);
+  transform: scale(0.6);
+  padding-top: 20px;
+}
+
+#chk:checked ~ .signup {
+  transform: translateY(-500px);
+}
+
+#chk:checked ~ .signup label {
+  transform: scale(1);
+}
+
+#chk:checked ~ .login label {
+  transform: scale(0.6);
+}
+
+input[type=date] {
+  color: grey;
+}
+:root {
+  --main-bg-color: #282828;
+  --card-bg-color: #404040;
+  --btn-color: #C4043F;
+}
+
+.moviecard {
+  margin-top: 100px;
+  height: 500px;
+  background-color: var(--card-bg-color) !important;
+  border-radius: 10px;
+  box-shadow: 5px 20px 50px #000;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+}
+
+.moviecard:hover {
+  background: var(--btn-color) !important;
+}
+
+.main-view {
+  width: 100%;
+  margin-top: 150px;
+}
+
+.card-img-top {
+  height: 90%;
+  align-self: center;
+  border-radius: 10px;
+}
+
+.card-title {
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 0.85rem;
+  line-height: normal;
+}
+
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+.movie-view {
+  border-radius: 10px;
+  box-shadow: 20px 20px 50px #000;
   color: white;
 }
 
 .movie-title {
-  font-size: 2em;
-  justify-content: center;
+  padding: 25px;
+  font-size: 2.5em;
   display: flex;
-  margin: 20px;
   font-weight: bold;
-  padding: 20px;
-  text-align: center;
-}
-
-.movie-image {
   justify-content: center;
-  display: flex;
-  margin-left: 30%;
-  text-align: center;
-  height: 300px;
-  box-shadow: 5px 20px 50px #000;
+  width: 100%;
 }
 
 .movie-description {
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 20px;
-  padding-top: 30px;
+  padding: 25px;
   font-size: 1em;
-  line-height: 1.5;
-  justify-content: center;
-  display: flex;
+}
+
+.movie-col {
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: #000 !important;
+}
+
+.movie-image {
+  width: 100%;
+  height: auto;
+  align-items: center;
 }
 
 .movie-genre {
+  padding-left: 25px;
   font-weight: bold;
-  padding-top: 0px;
-  padding-left: 30px;
-  padding-bottom: 30px;
+  font-size: 1em;
+}
+
+.movie-director {
+  padding-left: 25px;
+  font-size: 1em;
+}
+
+.back-row {
+  align-items: flex-end;
+  height: 150px;
+}
+:root {
+  --main-bg-color: #282828;
+  --card-bg-color: #404040;
+  --btn-color: #C4043F;
+}
+
+.navbar-main {
+  background: rgb(0, 0, 0);
+  height: 80px;
+}
+
+.navbar-logo {
+  font-weight: bold;
+  font-size: 2.5rem !important;
+}
+
+.navbar-menu {
+  justify-content: end !important;
+}
+
+.main-view-row {
+  background-color: var(--main-bg-color);
 }
 .my-flix {
   color: steelblue;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
 }
 /*# sourceMappingURL=index.1d334ea1.css.map */
