@@ -11,7 +11,7 @@ export function LoginView(props) {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [email, setEmail] = useState('');
-    //const [birthday, setBirthday] = useState('')
+    const [birthday, setBirthday] = useState('')
 
 
     //Initialize useState Hooks 
@@ -26,18 +26,31 @@ export function LoginView(props) {
         if (!username) {
             setUsernameErr('Username Required');
             isReq = false;
-        } else if (username.length < 2) {
-            setUsernameErr('Username must be 2 characters long');
+        } else if (username.length < 5) {
+            setUsernameErr('Username must be at least 5 characters long');
             isReq = false;
         }
         if (!password) {
             setPasswordErr('Password Required');
             isReq = false;
-        } else if (password.length < 4) {
-            setPassword('Password must be 6 characters long');
+        } else if (password.length < 5) {
+            setPassword('Password must be at least 5 characters long');
             isReq = false;
         }
         return isReq;
+    }
+
+    const validateEmail = () => {
+
+        let isEmail = true;
+        if (!email) {
+            setEmailErr('Email required');
+            isEmail = false;
+        } else if (email.indexOf('@') === -1) {
+            setEmail('Email must be valid');
+            isEmail = false;
+        }
+        return isEmail;
     }
 
     /* Sign-up function*/
@@ -45,7 +58,9 @@ export function LoginView(props) {
         e.preventDefault();
 
         const isReq = validate();
-        if (isReq) {
+        const isEmail = validateEmail();
+
+        if (isReq && isEmail) {
             axios.post('https://davidsmovieapp.herokuapp.com/users', {
                 Username: username,
                 Password: password,
@@ -56,7 +71,7 @@ export function LoginView(props) {
                     const data = response.data;
                     console.log(data);
                     alert('Registration succesful, please login!');
-                    windoww.open('/', self);
+                    window.open('/', self);
 
                 })
                 .catch(response => {
@@ -65,6 +80,8 @@ export function LoginView(props) {
                 })
         }
     };
+
+    
 
 
     /* Login function*/

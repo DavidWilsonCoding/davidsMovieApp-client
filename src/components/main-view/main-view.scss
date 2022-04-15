@@ -10,12 +10,13 @@
 }
 
 .navbar-logo{
-    font-weight: bold;
-    font-size: 2.5rem !important;
+  font-weight: bold;
+  font-size: 2.5rem !important;
 }
 
 .navbar-menu{
-    justify-content: end !important;
+  background-color: var(--card-bg-color) !important;
+  justify-content: end !important;
 }
 
 .main-view-row {

@@ -85,6 +85,7 @@ label{
 #chk:checked ~ .signup{
 	transform: translateY(-500px);
 }
+
 #chk:checked ~ .signup label{
 	transform: scale(1);	
 }

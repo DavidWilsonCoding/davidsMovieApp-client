@@ -36,7 +36,6 @@ class MainView extends React.Component {
             })
             this.getMovies(accessToken);
         }
-
     }
 
     /*When a movie is clicked, this function is invoked and updates the state of the `selectedMovie` property to that movie*/
@@ -91,11 +90,11 @@ class MainView extends React.Component {
         if (!user) return <LoginView onLoggedIn={user => this.onLoggedIn(user)} />;
 
         // Before the movies have been loaded
-        if (movies.length === 0) return <div className="main-view" />;
+        if (movies.length === 0) return <div className="main-view-row" />;
 
         return (
 
-            // --------NAVBAR---------------
+            /*navbar*/
 
             <Row className="main-view-row justify-content-md-center">
                 <Navbar collapseOnSelect expand="lg" bg="custom" variant="dark" className="fixed-top navbar-main">
@@ -111,7 +110,7 @@ class MainView extends React.Component {
                     </Navbar.Collapse>
                 </Navbar>
 
-                {/*If a movie has been selected (selectedMovie is not null), it will be returned - otherwise, all *movies will be returned*/}
+                {/*If a movie has been selected (selectedMovie is not null), it will returned otherwise, all *movies will be returned*/}
                 {selectedMovie
                     ? (
                         <Col md={8} >
@@ -121,7 +120,7 @@ class MainView extends React.Component {
                     )
 
                     : movies.map(movie => (
-                        <Col xs={12} sm={6} md={4} key={movie._id}>
+                        <Col xs={12} s={6} md={4} key={movie._id}>
                             <MovieCard movie={movie} onMovieClick={(newSelectedMovie) => { this.setSelectedMovie(newSelectedMovie) }} />
                         </Col>
 
