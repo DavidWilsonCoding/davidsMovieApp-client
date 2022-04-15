@@ -26923,7 +26923,7 @@ function LoginView(props) {
     /* Sign-up function*/ const handleSignup = (e)=>{
         e.preventDefault();
         const isReq = validate();
-        if (isReq) _axiosDefault.default.post('https://lynnflix.herokuapp.com/users', {
+        if (isReq) _axiosDefault.default.post('https://davidsmovieapp.herokuapp.com/users', {
             Username: username,
             Password: password,
             Email: email,

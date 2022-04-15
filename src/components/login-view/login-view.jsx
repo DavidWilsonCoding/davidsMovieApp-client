@@ -46,7 +46,7 @@ export function LoginView(props) {
 
         const isReq = validate();
         if (isReq) {
-            axios.post('https://lynnflix.herokuapp.com/users', {
+            axios.post('https://davidsmovieapp.herokuapp.com/users', {
                 Username: username,
                 Password: password,
                 Email: email,
