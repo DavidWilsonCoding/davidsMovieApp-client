@@ -56,7 +56,6 @@ label {
 }
 
 .btn {
-  margin-left: 20% !important;
   border: none !important;
   background: var(--btn-color) !important;
   font-size: 1em !important;
@@ -101,15 +100,15 @@ input[type=date] {
   --main-bg-color: #282828;
   --card-bg-color: #404040;
   --btn-color: #C4043F;
+  --text-color: white;
 }
 
 .moviecard {
   margin-top: 100px;
-  height: 500px;
+  height: 650px;
   background-color: var(--card-bg-color) !important;
   border-radius: 10px;
-  box-shadow: 5px 20px 50px #000;
-  color: white;
+  color: var(--text-color);
   cursor: pointer;
   text-align: center;
   padding: 10px;
@@ -119,31 +118,27 @@ input[type=date] {
   background: var(--btn-color) !important;
 }
 
-.main-view {
-  width: 100%;
-  margin-top: 150px;
+.moviecard *:hover {
+  text-decoration: none !important;
 }
 
 .card-img-top {
-  height: 90%;
   align-self: center;
   border-radius: 10px;
-}
-
-.card-title {
-  font-weight: bold;
-  padding-bottom: 0.5rem;
-}
-
-.card-text {
-  font-size: 0.85rem;
-  line-height: normal;
+  max-height: 500px;
 }
 
 .card-body {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
+:root {
+  --main-bg-color: #282828;
+  --card-bg-color: #404040;
+  --btn-color: #C4043F;
+  --text-color: white;
+}
+
 .movie-view {
   border-radius: 10px;
   box-shadow: 20px 20px 50px #000;
@@ -152,7 +147,7 @@ input[type=date] {
 
 .movie-title {
   padding: 25px;
-  font-size: 2.5em;
+  font-size: 2em;
   display: flex;
   font-weight: bold;
   justify-content: center;
@@ -161,44 +156,145 @@ input[type=date] {
 
 .movie-description {
   padding: 25px;
-  font-size: 1em;
 }
 
 .movie-col {
   margin: 0 !important;
   padding: 0 !important;
-  background-color: #000 !important;
+  background-color: var(--card-bg-color) !important;
 }
 
 .movie-image {
   width: 100%;
   height: auto;
-  align-items: center;
 }
 
 .movie-genre {
   padding-left: 25px;
   font-weight: bold;
-  font-size: 1em;
+  color: white;
+}
+
+.movie-genre:hover {
+  color: var(--btn-color) !important;
 }
 
 .movie-director {
   padding-left: 25px;
-  font-size: 1em;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.movie-director:hover {
+  text-decoration: none !important;
+  color: var(--btn-color) !important;
+}
+
+a:link {
+  text-decoration: none !important;
 }
 
 .back-row {
-  align-items: flex-end;
-  height: 150px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 :root {
   --main-bg-color: #282828;
   --card-bg-color: #404040;
   --btn-color: #C4043F;
+  --text-color: white;
+}
+
+.main-view-row {
+  padding-top: 100px;
+  background-color: var(--main-bg-color);
+}
+:root {
+  --main-bg-color: #282828;
+  --card-bg-color: #404040;
+  --btn-color: #C4043F;
+  --text-color: white;
+}
+
+.director-view {
+  width: 100%;
+  margin: 40px;
+  padding: 40px;
+  color: var(--text-color);
+  background-color: var(--card-bg-color) !important;
+}
+
+#back-btn-1 {
+  background-color: var(--btn-color);
+  border-radius: 5px;
+  border: none;
+  color: white;
+  text-decoration: none;
+  max-width: 100px;
+  font-size: 25px;
+  margin-top: 10px;
+  float: right;
+}
+
+.director-name {
+  font-size: 40px;
+}
+
+.director-description {
+  font-size: 30px;
+}
+
+span {
+  font-weight: 900;
+}
+:root {
+  --main-bg-color: #282828;
+  --card-bg-color: #404040;
+  --btn-color: #C4043F;
+  --text-color: white;
+}
+
+.genre-view {
+  border-radius: 10px;
+  color: white;
+  height: 350px;
+  background: var(--card-bg-color);
+}
+
+.genre-col {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.genre-name {
+  color: white !important;
+  padding-top: 25px;
+  font-size: 2em;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  width: 100%;
+}
+
+.genre-description {
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 30px;
+}
+
+.back-button {
+  margin: 25px;
+}
+:root {
+  --main-bg-color: #282828;
+  --card-bg-color: #404040;
+  --btn-color: #C4043F;
+  --text-color: white;
 }
 
 .navbar-main {
-  background: rgb(0, 0, 0);
+  background-color: var(--card-bg-color);
   height: 80px;
 }
 
@@ -211,12 +307,25 @@ input[type=date] {
   background-color: var(--card-bg-color) !important;
   justify-content: end !important;
 }
-
-.main-view-row {
-  background-color: var(--main-bg-color);
+:root {
+  --main-bg-color: #282828;
+  --card-bg-color: #404040;
+  --btn-color: #C4043F;
+  --text-color: white;
 }
+
+.form-label {
+  display: inline-block !important;
+}
+:root {
+  --main-bg-color: #282828;
+  --card-bg-color: #404040;
+  --btn-color: #C4043F;
+  --text-color: white;
+}
+
 .my-flix {
-  color: steelblue;
+  background-color: var(--main-bg-color);
 }
 
 * {

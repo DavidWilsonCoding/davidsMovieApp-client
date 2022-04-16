@@ -2,47 +2,45 @@
   --main-bg-color: #282828;
   --card-bg-color: #404040;
   --btn-color: #C4043F;
+	--text-color: white;
 }
 
-.moviecard{
+.moviecard {
   margin-top: 100px;
-  height: 500px;
+  height: 650px;
   background-color: var(--card-bg-color) !important;
   border-radius: 10px;
-  box-shadow: 5px 20px 50px #000;
-  color: white;
+  // box-shadow: 5px 20px 50px #000;
+  color: var(--text-color);
   cursor: pointer;
   text-align: center;
   padding: 10px;
 }
 
-.moviecard:hover{
+.moviecard:hover {
   background: var(--btn-color) !important;
 }
 
-.main-view{
-  width: 100%;
-  margin-top: 150px;
+.moviecard *:hover {
+  text-decoration: none !important;
 }
 
-.card-img-top{
-  height: 90%;
+// .main-view {
+//   width: 100%;
+//   margin-top: 150px;
+// }
+
+.card-img-top {
   align-self: center;
   border-radius: 10px;
-}
-
-.card-title{
-  font-weight: bold;
-  padding-bottom: 0.5rem;
-}
-
-.card-text{
-  font-size: 0.85rem;
-  line-height: normal;
+  max-height: 500px;
 }
 
 .card-body {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
-  
 }
+
+// .movie-title:hover {
+//   text-decoration: none !important;
+// }

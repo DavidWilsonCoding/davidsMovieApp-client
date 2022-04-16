@@ -1,0 +1,40 @@
+:root {
+  --main-bg-color: #282828;
+  --card-bg-color: #404040;
+  --btn-color: #C4043F;
+  --text-color: white;
+}
+
+.genre-view{
+	border-radius: 10px;
+	color: white;
+  height: 350px;
+  background: var(--card-bg-color);   
+}
+
+.genre-col {
+	margin: 0 !important;
+	padding: 0 !important;
+	// background-color: #000 !important;
+}
+
+.genre-name {
+  color: white !important;
+	padding-top: 25px;
+	font-size: 2em;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+	width: 100%;
+}
+
+
+.genre-description {
+	padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 30px;
+}
+
+.back-button{
+    margin: 25px;
+}

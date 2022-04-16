@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import PropTypes from 'prop-types';
-
+import { Link } from "react-router-dom";
 
 // Movie view stylesheet
 import './movie-view.scss';
@@ -29,7 +29,7 @@ export class MovieView extends React.Component {
     render() {
         const { movie, onBackClick } = this.props;
         return (
-            <Row className="main-view justify-content-md-center">
+            <Row className="main-view">
                 <Col md={12} >
 
                     <div className="movie-view" >
@@ -47,17 +47,21 @@ export class MovieView extends React.Component {
                                     <div className="movie-description">
                                         <span className="value">{movie.Description}</span>
                                     </div>
-
-                                    <p></p>
-                                    <div className="movie-genre">
-                                        <span className="value">{movie.Genre.Name}</span>
-                                    </div>
-                                    <div className="movie-director">
-                                        <span className="value">Directed by: {movie.Director.Name}</span>
-                                    </div>
+                                    <Link to={`/genres/${movie.Genre.Name}`}>
+                                        {/* <div className="movie-genre"> */}
+                                            <p className="movie-genre">{movie.Genre.Name}</p>
+                                        {/* </div> */}
+                                    </Link>
+                                    <Link to={`/directors/${movie.Director.Name}`}>
+                                        {/* <div className="movie-director"> */}
+                                            <p className="movie-director">Directed by {movie.Director.Name}</p>
+                                        {/* </div> */}
+                                    </Link>
 
                                 </Row>
-                                <Row className="back-row"><Col ><Button onClick={() => { onBackClick(null); }} >Back</Button></Col></Row>
+                                <Row className="back-row"><Col ><Button onClick={() => { onBackClick(); }} >Back</Button></Col></Row>
+
+
                             </Col>
                         </Row>
 

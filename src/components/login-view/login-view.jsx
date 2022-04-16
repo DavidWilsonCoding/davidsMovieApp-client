@@ -107,11 +107,11 @@ export function LoginView(props) {
 
     return (
         <Row>
-            <Col md={12} className="d-flex justify-content-center">
+            <Col className="d-flex justify-content-center">
                 < div className="main" >
                     <input type="checkbox" id="chk" aria-hidden="true" />
                     <div className="login">
-                        <Form >
+                        <Form className="text-center">
                             <label htmlFor="chk" aria-hidden="true" >MyFlix</label>
 
                             <Form.Group >
@@ -144,7 +144,7 @@ export function LoginView(props) {
                         </Form>
                     </div>
                     <div className="signup">
-                        <Form className="signup-form">
+                        <Form className="signup-form text-center">
                             <label htmlFor="chk" aria-hidden="true" className="signup-label">Sign up</label>
                             <Form.Group controlId="formSigninUsername">
                                 <Form.Control

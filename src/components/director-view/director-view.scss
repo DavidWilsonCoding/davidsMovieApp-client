@@ -1,0 +1,38 @@
+:root {
+  --main-bg-color: #282828;
+  --card-bg-color: #404040;
+  --btn-color: #C4043F;
+  --text-color: white;
+}
+
+.director-view {
+  width: 100%;
+  margin: 40px;
+  padding: 40px;
+  color: var(--text-color);
+  background-color: var(--card-bg-color) !important;
+}
+
+#back-btn-1 {
+  background-color: var(--btn-color);
+  border-radius: 5px;
+  border: none;
+  color: white;
+  text-decoration: none;
+  max-width: 100px;
+  font-size: 25px;
+  margin-top: 10px;
+  float: right;
+}
+
+.director-name {
+  font-size: 40px;
+}
+
+.director-description {
+  font-size: 30px;
+}
+
+span {
+  font-weight: 900;
+}
