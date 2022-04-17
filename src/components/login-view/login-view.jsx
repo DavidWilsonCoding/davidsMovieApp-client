@@ -112,7 +112,7 @@ export function LoginView(props) {
                     <input type="checkbox" id="chk" aria-hidden="true" />
                     <div className="login">
                         <Form className="text-center">
-                            <label htmlFor="chk" aria-hidden="true" >MyFlix</label>
+                            <label htmlFor="chk" aria-hidden="true" className="login-label">MyFlix</label>
 
                             <Form.Group >
                                 <Form.Control

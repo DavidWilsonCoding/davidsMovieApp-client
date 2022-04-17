@@ -7,4 +7,29 @@
 
 .form-label {
     display: inline-block !important;
+    font-size: 1em;
+    color: var(--text-color) !important;
+    margin: 0;
+}
+
+.nav-tabs .nav-link {
+    background-color: var(--btn-color);
+    color: var(--text-color);
+}
+
+ul.nav.nav-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+// .profile-view-row {
+//     background-color: green;
+// }
+
+.profile-view-column {
+    background-color: black;
+    padding: 30px !important;
 }
