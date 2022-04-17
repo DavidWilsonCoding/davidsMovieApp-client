@@ -1,0 +1,46 @@
+:root {
+  --main-bg-color: #282828;
+  --card-bg-color: #404040;
+  --btn-color: #C4043F;
+	--text-color: white;
+}
+
+.moviecard {
+  margin-top: 100px;
+  height: 650px;
+  background-color: var(--card-bg-color) !important;
+  border-radius: 10px;
+  // box-shadow: 5px 20px 50px #000;
+  color: var(--text-color);
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+}
+
+.moviecard:hover {
+  background: var(--btn-color) !important;
+}
+
+.moviecard *:hover {
+  text-decoration: none !important;
+}
+
+// .main-view {
+//   width: 100%;
+//   margin-top: 150px;
+// }
+
+.card-img-top {
+  align-self: center;
+  border-radius: 10px;
+  max-height: 500px;
+}
+
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+// .movie-title:hover {
+//   text-decoration: none !important;
+// }

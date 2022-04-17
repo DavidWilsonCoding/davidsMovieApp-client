@@ -1,0 +1,348 @@
+:root {
+  --main-bg-color: #282828;
+  --card-bg-color: #404040;
+  --btn-color: #C4043F;
+}
+
+.main {
+  width: 350px;
+  height: 500px;
+  overflow: hidden;
+  background-color: var(--card-bg-color);
+  border-radius: 10px;
+  box-shadow: 5px 20px 50px #000;
+  margin-top: 10%;
+}
+
+#chk {
+  display: none;
+}
+
+.login {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.login-label {
+  color: white;
+  font-size: 2.3em;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.inputbox {
+  width: 60% !important;
+  background: #e0dede !important;
+  margin: 5px auto;
+  font-size: 0.85rem !important;
+}
+
+.btn {
+  border: none !important;
+  background: var(--btn-color) !important;
+  font-size: 1em !important;
+  font-weight: bold !important;
+  transition: 0.2s ease-in !important;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.signup {
+  color: white;
+  font-size: 2.3em;
+  justify-content: center;
+  height: 460px;
+  background: #eee;
+  transform: translateY(-180px);
+  transition: 0.8s ease-in-out;
+  margin-block-start: 100px;
+}
+
+.signup-label {
+  color: var(--btn-color);
+  transform: scale(0.6);
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+#chk:checked ~ .signup {
+  transform: translateY(-500px);
+}
+
+#chk:checked ~ .signup label {
+  transform: scale(1);
+}
+
+#chk:checked ~ .login label {
+  transform: scale(0.6);
+}
+
+input[type=date] {
+  color: grey;
+}
+:root {
+  --main-bg-color: #282828;
+  --card-bg-color: #404040;
+  --btn-color: #C4043F;
+  --text-color: white;
+}
+
+.moviecard {
+  margin-top: 100px;
+  height: 650px;
+  background-color: var(--card-bg-color) !important;
+  border-radius: 10px;
+  color: var(--text-color);
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+}
+
+.moviecard:hover {
+  background: var(--btn-color) !important;
+}
+
+.moviecard *:hover {
+  text-decoration: none !important;
+}
+
+.card-img-top {
+  align-self: center;
+  border-radius: 10px;
+  max-height: 500px;
+}
+
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+:root {
+  --main-bg-color: #282828;
+  --card-bg-color: #404040;
+  --btn-color: #C4043F;
+  --text-color: white;
+}
+
+.movie-view {
+  border-radius: 10px;
+  box-shadow: 20px 20px 50px #000;
+  color: white;
+}
+
+.movie-title {
+  padding: 25px;
+  font-size: 2em;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  width: 100%;
+}
+
+.movie-description {
+  padding: 25px;
+}
+
+.movie-col {
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: var(--card-bg-color) !important;
+}
+
+.movie-image {
+  width: 100%;
+  height: auto;
+}
+
+.movie-genre {
+  padding-left: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+.movie-genre:hover {
+  color: var(--btn-color) !important;
+}
+
+.movie-director {
+  padding-left: 25px;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.movie-director:hover {
+  text-decoration: none !important;
+  color: var(--btn-color) !important;
+}
+
+a:link {
+  text-decoration: none !important;
+}
+
+.back-row {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+:root {
+  --main-bg-color: #282828;
+  --card-bg-color: #404040;
+  --btn-color: #C4043F;
+  --text-color: white;
+}
+
+.main-view-row {
+  padding-top: 100px;
+}
+
+.view-container-col {
+  width: 100vw !important;
+  background-color: orange;
+}
+:root {
+  --main-bg-color: #282828;
+  --card-bg-color: #404040;
+  --btn-color: #C4043F;
+  --text-color: white;
+}
+
+.director-view {
+  width: 100%;
+  margin: 40px;
+  padding: 40px;
+  color: var(--text-color);
+  background-color: var(--card-bg-color) !important;
+}
+
+#back-btn-1 {
+  background-color: var(--btn-color);
+  border-radius: 5px;
+  border: none;
+  color: white;
+  text-decoration: none;
+  max-width: 100px;
+  font-size: 25px;
+  margin-top: 10px;
+  float: right;
+}
+
+.director-name {
+  font-size: 40px;
+}
+
+.director-description {
+  font-size: 30px;
+}
+
+span {
+  font-weight: 900;
+}
+:root {
+  --main-bg-color: #282828;
+  --card-bg-color: #404040;
+  --btn-color: #C4043F;
+  --text-color: white;
+}
+
+.genre-view {
+  border-radius: 10px;
+  color: white;
+  height: 350px;
+  background: var(--card-bg-color);
+}
+
+.genre-col {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.genre-name {
+  color: white !important;
+  padding-top: 25px;
+  font-size: 2em;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  width: 100%;
+}
+
+.genre-description {
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 30px;
+}
+
+.back-button {
+  margin: 25px;
+}
+:root {
+  --main-bg-color: #282828;
+  --card-bg-color: #404040;
+  --btn-color: #C4043F;
+  --text-color: white;
+}
+
+.navbar-main {
+  background-color: var(--card-bg-color);
+  height: 80px;
+}
+
+.navbar-logo {
+  font-weight: bold;
+  font-size: 2.5rem !important;
+}
+
+.navbar-menu {
+  background-color: var(--card-bg-color) !important;
+  justify-content: end !important;
+}
+:root {
+  --main-bg-color: #282828;
+  --card-bg-color: #404040;
+  --btn-color: #C4043F;
+  --text-color: white;
+}
+
+.form-label {
+  display: inline-block !important;
+  font-size: 1em;
+  color: var(--text-color) !important;
+  margin: 0;
+}
+
+.nav-tabs .nav-link {
+  background-color: var(--btn-color);
+  color: var(--text-color);
+}
+
+ul.nav.nav-tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.profile-view-column {
+  background-color: black;
+  padding: 30px !important;
+}
+:root {
+  --main-bg-color: #282828;
+  --card-bg-color: #404040;
+  --btn-color: #C4043F;
+  --text-color: white;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--main-bg-color) !important;
+}
+/*# sourceMappingURL=index.1d334ea1.css.map */

@@ -1,0 +1,30 @@
+:root {
+  --main-bg-color: #282828;
+  --card-bg-color: #404040;
+  --btn-color: #C4043F;
+	--text-color: white;
+}
+
+
+
+// body {
+// 	margin: 0;
+// 	min-height: 100vh;
+// 	font-family: 'Poppins', sans-serif;
+// 	background-color: var(--main-bg-color) !important;
+// }
+
+.main-view-row {
+  padding-top: 100px;
+  // background-color: var(--main-bg-color);
+}
+
+// .main-view-col {
+//   min-height: calc(100vh - 100px);
+//   // background-color: red;
+// }
+
+.view-container-col {
+  width: 100vw !important;
+  background-color: orange;
+}

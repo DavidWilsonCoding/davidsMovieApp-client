@@ -1,0 +1,70 @@
+:root {
+  --main-bg-color: #282828;
+  --card-bg-color: #404040;
+  --btn-color: #C4043F;
+	--text-color: white;
+}
+
+.movie-view{
+	border-radius: 10px;
+	box-shadow: 20px 20px 50px #000;
+	color: white;
+	
+}
+
+.movie-title {
+	padding: 25px;
+	font-size: 2em;
+	display: flex;
+	font-weight: bold;
+	justify-content: center;
+	width: 100%;
+}
+
+.movie-description{
+	padding: 25px;
+}
+
+.movie-col {
+	margin: 0 !important;
+	padding: 0 !important;
+	background-color: var(--card-bg-color) !important;
+}
+
+.movie-image {
+   width: 100%;
+   height: auto;
+  //  align-items: center;
+}
+
+.movie-genre{
+	padding-left: 25px;
+	font-weight: bold;
+	color: white;
+}
+
+.movie-genre:hover{
+    color: var(--btn-color)  !important;
+}
+
+.movie-director{
+	padding-left: 25px;
+	color: white;
+	font-size: 0.9rem;
+}
+.movie-director:hover{
+	text-decoration: none !important;
+  color: var(--btn-color) !important;
+}
+
+
+a:link{
+	text-decoration: none !important;
+	// color: #6d44b8  ;
+
+}
+.back-row{
+	position: absolute;
+  bottom: 0;
+	width: 100%;
+}
